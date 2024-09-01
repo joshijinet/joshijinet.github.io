@@ -52,7 +52,7 @@ body {
   letter-spacing: var(--mainSpacing);
   font-size: 1.2rem;
   background: transparent;
-  color: var(--mainBlack);
+  color: white;
   border: 1px solid black;
   transition: var(--mainTransition);
   cursor: pointer;
@@ -64,9 +64,11 @@ body {
   border-radius: 5px;
   background: lightblue;
   text-transform: uppercase;
+  color: var(--mainBlack);
 }
 .banner-btn:hover {
   background: transparent;
+  color: white;
 }
 /* --------------- End of Hero ---------------- */
 /* --------------- Products ---------------- */
