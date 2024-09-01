@@ -47,7 +47,6 @@ body {
 }
 .banner-btn {
   padding: 1rem 3rem;
-  text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   font-size: 1.2rem;
   background: transparent;
@@ -62,6 +61,7 @@ body {
   font-weight: bold;
   border-radius: 5px;
   background: lightblue;
+  text-transform: uppercase;
 }
 .banner-btn:hover {
   background: transparent;
