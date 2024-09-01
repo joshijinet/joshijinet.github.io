@@ -55,6 +55,7 @@ body {
   border: 1px solid black;
   transition: var(--mainTransition);
   cursor: pointer;
+  border-radius: 20px;
 }
 .banner-btn:hover {
   background: transparent;
