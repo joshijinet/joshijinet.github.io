@@ -49,10 +49,10 @@ body {
   padding: 1rem 3rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
-  font-size: 1rem;
-  background: var(--primaryColor);
+  font-size: 1.2rem;
+  background: lightblue;
   color: var(--mainBlack);
-  border: 1px solid var(--primaryColor);
+  border: 1px solid lightblue;
   transition: var(--mainTransition);
   cursor: pointer;
 }
