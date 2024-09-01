@@ -258,3 +258,7 @@ body {
   display: table;
   clear: both;
 }
+
+.hero-services {
+  min-height: calc(70vh - 10px);
+}
