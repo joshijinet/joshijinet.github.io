@@ -50,6 +50,7 @@ body {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   font-size: 1.2rem;
+  font-weight: bold;
   background: lightblue;
   color: var(--mainBlack);
   border: 1px solid lightblue;
