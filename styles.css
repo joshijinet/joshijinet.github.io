@@ -53,13 +53,12 @@ body {
   font-weight: bold;
   background: lightblue;
   color: var(--mainBlack);
-  border: 1px solid lightblue;
+  border: 1px solid black;
   transition: var(--mainTransition);
   cursor: pointer;
 }
 .banner-btn:hover {
   background: transparent;
-  color: var(--primaryColor);
 }
 /* --------------- End of Hero ---------------- */
 /* --------------- Products ---------------- */
