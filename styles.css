@@ -57,6 +57,11 @@ body {
   cursor: pointer;
   border-radius: 20px;
 }
+.banner-btn-appt {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
 .banner-btn:hover {
   background: transparent;
 }
