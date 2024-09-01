@@ -50,7 +50,7 @@ body {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   font-size: 1.2rem;
-  background: lightblue;
+  background: transparent;
   color: var(--mainBlack);
   border: 1px solid black;
   transition: var(--mainTransition);
@@ -61,6 +61,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   border-radius: 5px;
+  background: lightblue;
 }
 .banner-btn:hover {
   background: transparent;
