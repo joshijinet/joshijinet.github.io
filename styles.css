@@ -66,10 +66,6 @@ body {
   text-transform: uppercase;
   color: var(--mainBlack);
 }
-.banner-btn:hover {
-  background: transparent;
-  color: white;
-}
 
 
 .img-credit {
