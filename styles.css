@@ -111,7 +111,8 @@ body {
   letter-spacing: var(--mainSpacing);
   font-size: 1rem;
   text-align: center;
-  color: var(--mainBlack);
+  color: white;
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
+  background: transparent;
 }
