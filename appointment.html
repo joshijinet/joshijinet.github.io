@@ -16,23 +16,29 @@
   <i class="fa fa-home fa-3x" onclick="location.href='https://joshiji.net/'"></i>
   <header class="hero hero-services">
     <div class="banner">
-      <form action="https://docs.google.com/forms/d/1uRDFmUEwd_dW_Eg2eQRZsgfYTyT6AXhULCxDCcPX2s0/formResponse" method="POST">
-          <div class="item">
-              <label>Your Name</label>
-              <input name="entry.2019249857" required type="text" placeholder="First Last" />
-          </div>
-      
-          <div class="item">
-              <label>Your Phone or Email</label>
-              <input name="entry.1662983024" required type="text" placeholder="name@domain.com or xxx-xxx-xxxx" />
-          </div>
-      
-          <div class="item">
-              <input type="hidden" name="entry.840964439" required type="text" value="" id="autoSetTheValue">
-          </div>
-      
-          <input type="submit" value="Submit your order!">
-      </form>
+
+      <form id="gForm" action="https://docs.google.com/forms/d/1uRDFmUEwd_dW_Eg2eQRZsgfYTyT6AXhULCxDCcPX2s0/formResponse" method="POST" target="hiddenFrame">
+            <div class="item">
+                <input class="orderfield-btn" name="entry.2019249857" required type="text" placeholder="* First Last" />
+            </div>
+            <div class="item">
+                <input class="orderfield-btn" name="entry.1662983024" required type="text" placeholder="* Phone or Email" />
+            </div>
+            <div class="item">
+                <input class="orderfield-btn" name="entry.824860100" type="text" placeholder="Promo Code" />
+            </div>
+            <div class="item">
+                <textarea rows="5" class="orderfield-btn" name="entry.564007380" type="text" placeholder="Anything else?"></textarea>
+            </div>
+            <div class="item">
+                <input type="hidden" name="entry.501284745" type="text" value="" id="autoSetOrderTotal">
+            </div>
+            <div class="item">
+                <input type="hidden" name="entry.840964439" required type="text" value="" id="autoSetOrderDetails">
+            </div>
+            <button type="submit" class="clear-cart banner-btn">Submit your Order!</button>
+            <iframe name="hiddenFrame" style="position: absolute; width:0; height:0; border:0;"></iframe>
+        </form>
       
     </div>
   </header>
