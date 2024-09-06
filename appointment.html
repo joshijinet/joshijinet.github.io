@@ -39,12 +39,7 @@
             <iframe name="hiddenFrame" style="position: absolute; width:0; height:0; border:0;"></iframe>
         </form>
         <br />
-      <button id="butt" onclick=${() => {
-  document.getElementById("_text").hidden = document.getElementById("_text").hidden? false : true;
-  let btext = document.getElementById("_butt").innerText;
-  document.getElementById("_butt").innerText = (btext[0] == 'H')? btext.replace("Hide","Show") : btext.replace("Show","Hide");
-  }
-}>Hide the text</button>
+      
         <p class="banner-details" style="font-size: 0.6rem; font-weight: normal;">By requesting appointment, you agree to <b onclick=${() => {
           document.getElementById("terms").hidden = document.getElementById("terms").hidden? false : true
           }>Terms and Conditions</b> of the services</p>
