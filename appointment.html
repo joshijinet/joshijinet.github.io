@@ -13,36 +13,43 @@
 
     <script type="text/javascript">
 
-   //Created / Generates the captcha function    
-    function DrawCaptcha()
-    {
-        var a = Math.ceil(Math.random() * 10)+ '';
-        var b = Math.ceil(Math.random() * 10)+ '';       
-        var c = Math.ceil(Math.random() * 10)+ '';  
-        var d = Math.ceil(Math.random() * 10)+ '';  
-        var e = Math.ceil(Math.random() * 10)+ '';  
-        var f = Math.ceil(Math.random() * 10)+ '';  
-        var g = Math.ceil(Math.random() * 10)+ '';  
-        var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
-        document.getElementById("txtCaptcha").value = code
-    }
-
-    // Validate the Entered input aganist the generated security code function   
-    function ValidCaptcha(){
-        var str1 = (document.getElementById('txtCaptcha').value).split(' ').join('');
-        var str2 = (document.getElementById('txtInput').value).split(' ').join('');
-        var captcha = document.getElementById("captchaForm");
-        var captchabox = document.getElementById("txtCaptcha");
-        var goog = document.getElementById("gForm");
-        
-        if (str1 == str2) {
-          captcha.style.display = "none";
-          goog.style.display = "block";
-        } else {
-          DrawCaptcha();
-          captchabox.style.border = "0.2rem solid red";
-        }
-    }
+     //Created / Generates the captcha function    
+      function DrawCaptcha()
+      {
+          var a = Math.ceil(Math.random() * 10)+ '';
+          var b = Math.ceil(Math.random() * 10)+ '';       
+          var c = Math.ceil(Math.random() * 10)+ '';  
+          var d = Math.ceil(Math.random() * 10)+ '';  
+          var e = Math.ceil(Math.random() * 10)+ '';  
+          var f = Math.ceil(Math.random() * 10)+ '';  
+          var g = Math.ceil(Math.random() * 10)+ '';  
+          var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
+          document.getElementById("txtCaptcha").value = code
+      }
+  
+      // Validate the Entered input aganist the generated security code function   
+      function ValidCaptcha(){
+          var str1 = (document.getElementById('txtCaptcha').value).split(' ').join('');
+          var str2 = (document.getElementById('txtInput').value).split(' ').join('');
+          var captcha = document.getElementById("captchaForm");
+          var captchabox = document.getElementById("txtCaptcha");
+          var goog = document.getElementById("gForm");
+          
+          if (str1 == str2) {
+            captcha.style.display = "none";
+            goog.style.display = "block";
+          } else {
+            DrawCaptcha();
+            captchabox.style.border = "0.2rem solid red";
+          }
+      }
+  
+      function requestReceived() {
+          var goog = document.getElementById("gForm");
+          var reqRec = document.getElementById("requestReceived");
+          goog.style.display = "none";
+          reqRec.style.display = "block";
+      }
     </script>
 </head>
 
@@ -87,7 +94,7 @@
             </div>
             <br />
             <br />
-            <button type="submit" class="banner-btn banner-btn-appt">Request Appointment</button>
+            <button type="submit" class="banner-btn banner-btn-appt" onclick="requestReceived();">Request Appointment</button>
             <iframe name="hiddenFrame" style="position: absolute; width:0; height:0; border:0;"></iframe>
             <br /><br />
             <p class="banner-details" style="font-size: 0.6rem; font-weight: normal;">We will reach out to setup an in-person or virtual consultation once your request is reviewed.</p>
@@ -111,6 +118,12 @@
                   </ul>
               </details>  
         </form>
+
+        <form id="requestReceived" style="display: none;">
+            <button type="submit" class="banner-btn banner-btn-appt" onclick="location.href='https://joshiji.net/'">Thank you!<br />Request Received</button>
+            <br /><br />
+            <p class="banner-details" style="font-size: 0.6rem; font-weight: normal;">We will reach out to setup an in-person or virtual consultation once your request is reviewed.</p>
+      </form>
                
       <br />
       <br />
