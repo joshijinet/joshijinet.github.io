@@ -120,3 +120,7 @@ body {
 input::placeholder {
   font-size: 0.8rem;
 }
+
+textarea::placeholder {
+  font-size: 0.8rem;
+}
