@@ -32,13 +32,15 @@
         var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
         var str2 = removeSpaces(document.getElementById('txtInput').value);
         var captcha = document.getElementById("captchaForm");
+        var captchabox = document.getElementById("txtCaptcha");
         var goog = document.getElementById("gForm");
         
         if (str1 == str2) {
           captcha.style.display = "none";
           goog.style.display = "block";
-        } else {    
-          return false;
+        } else {
+          DrawCaptcha();
+          captchabox.style.border = "red";
         }
         
     }
