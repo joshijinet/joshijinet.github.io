@@ -51,7 +51,20 @@
   <header class="hero hero-services">
     <div class="banner">
 
-      
+      <form id="captchaForm">
+            <div class="item">
+                <input type="text" id="txtCaptcha" style="text-align:center; border:none; font-weight:bold; font-family:Modern; background-image:url(captcha.jpeg); color: gray; border: none; font-size: 1.6rem;" readonly />
+                <i class="fa fa-refresh" aria-hidden="true" onclick="DrawCaptcha();"></i>
+            </div>
+            <div class="item">
+                <input class="orderfield-btn" id="txtInput" type="text" placeholder="* enter captcha text" />
+            </div>
+            <br />
+            <button id="Button1" type="button" value="Check" class="banner-btn banner-btn-appt" onclick="alert(ValidCaptcha());">Validate</button>
+      </form>
+
+
+      <!--
       <table>
         <tr>
             <td>
@@ -72,7 +85,7 @@
         </tr>
         <br />
       </table>
-
+      -->
 
       
       
