@@ -116,3 +116,7 @@ body {
   transition: var(--mainTransition);
   background: transparent;
 }
+
+input::placeholder {
+  font-size: 0.8rem;
+}
