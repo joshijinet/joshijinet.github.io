@@ -31,7 +31,13 @@
     function ValidCaptcha(){
         var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
         var str2 = removeSpaces(document.getElementById('txtInput').value);
-        if (str1 == str2) return true;        
+        var captcha = document.getElementById("captchaForm");
+        var goog = document.getElementById("gForm");
+        
+        if (str1 == str2) {
+          captcha.style.display = "none";
+          goog.style.display = "block";
+        }        
         return false;
         
     }
@@ -61,6 +67,8 @@
             </div>
             <br />
             <button id="Button1" type="button" value="Check" class="banner-btn banner-btn-appt" onclick="alert(ValidCaptcha());">Validate</button>
+            <br />
+            <p class="banner-details" style="font-size: 0.9rem; font-weight: normal;">Validate Captcha to be able to submit appointment request.</p>
       </form>
 
 
