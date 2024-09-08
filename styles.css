@@ -90,6 +90,16 @@ body {
 
 @media (min-width: 600px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
+  .homeheader { height: 300px; }
+}
+
+.homeheader {
+  background-image: url('astrology_light_home.jpg'); 
+  height: 100px; 
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  opacity: 0.4; 
+  background-size: 100% 100%;
 }
 
 
