@@ -46,7 +46,7 @@ body {
   letter-spacing: var(--mainSpacing);
   font-size: 1.2rem;
   background: transparent;
-  color: white;
+  color: black;
   border: 1px solid white;
   transition: var(--mainTransition);
   cursor: pointer;
@@ -101,7 +101,7 @@ body {
 }
 
 .card {
-  color: white;
+  color: black;
   padding: 1rem;
   height: 12rem;
 }
@@ -111,7 +111,7 @@ body {
   letter-spacing: var(--mainSpacing);
   font-size: 1rem;
   text-align: center;
-  color: white;
+  color: black;
   border: 1px solid white;
   transition: var(--mainTransition);
   background: transparent;
