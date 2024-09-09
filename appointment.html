@@ -45,10 +45,14 @@
       }
   
       function requestReceived() {
-          var goog = document.getElementById("gForm");
-          var reqRec = document.getElementById("requestReceived");
-          goog.style.display = "none";
-          reqRec.style.display = "block";
+          var gName = (document.getElementById('gName').value)
+          var gContact = (document.getElementById('gContact').value)
+          if (gName && gContact) {
+             var goog = document.getElementById("gForm");
+             var reqRec = document.getElementById("requestReceived");
+             goog.style.display = "none";
+             reqRec.style.display = "block";
+          }
       }
     </script>
     <script src="functions.js"></script>
@@ -90,11 +94,11 @@
       
       <form id="gForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfVzCYXm3Tz2vViMEPKkyK5rlP5hLJDjiJkZwPL_gDg-RRNWg/formResponse" method="POST" target="hiddenFrame" style="display: none;">
             <div class="item">
-                <input class="orderfield-btn" name="entry.1633910665" required type="text" placeholder="* First Last" />
+                <input class="orderfield-btn" name="entry.1633910665" required type="text" placeholder="* First Last" id="gName" />
             </div>
             <br />
             <div class="item">
-                <input class="orderfield-btn" name="entry.1527935553" required type="text" placeholder="* Phone or Email" />
+                <input class="orderfield-btn" name="entry.1527935553" required type="text" placeholder="* Phone or Email" id="gContact"/>
             </div>
             <br />
             <div class="item">
