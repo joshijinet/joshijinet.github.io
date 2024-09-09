@@ -10,12 +10,23 @@
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="styles.css">
+    <script src="functions.js"></script>
+
 </head>
 
 <body>
   <div>
     <img src="home.png" alt="Home" onclick="location.href='https://joshiji.net/'">
-    <img src="home_2.png" alt="Home" onclick="location.href='https://joshiji.net/'" style="float: right;">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a onclick="location.href='index.html'">home</a>
+        <a onclick="location.href='about.html'">about me</a>
+        <a onclick="location.href='services.html'">services</a>
+        <a onclick="location.href='appointment.html'">APPOINTMENT</a>
+      </div>
+    </div>
+    <span style="font-size:50px;cursor:pointer; float: right;" onclick="openNav()">&#9776;</span>
   </div>
   <header class="hero hero-services">
     <div class="banner">
