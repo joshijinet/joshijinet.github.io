@@ -22,12 +22,6 @@ body {
   color: black;
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
-  body {
-  background-attachment: scroll;
-  }
-}
-
 /* --------------- Hero ---------------- */
 .hero {
   min-height: calc(100vh - 60px);
