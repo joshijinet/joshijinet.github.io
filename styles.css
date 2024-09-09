@@ -17,7 +17,7 @@ body {
   background-image: url('astrology_light.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
-  background-size: 100vw 100vh;
+ /* background-size: 100vw 100vh;*/
   font-family: "Lato", sans-serif;
   color: black;
 }
