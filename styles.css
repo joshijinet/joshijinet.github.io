@@ -93,6 +93,14 @@ body {
   .homeheader { height: 300px; }
 }
 
+@media (max-width: 450px) {
+  .homeheader { height: 100px; }
+}
+
+@media (max-width: 600px) {
+  .homeheader { height: 200px; }
+}
+
 .homeheader {
   background-image: url('astrology_light_home.jpg'); 
   height: 100px; 
