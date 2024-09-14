@@ -213,8 +213,6 @@ textarea::placeholder {
   overflow-x: hidden;
   transition: 0.5s;
   color: white;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .overlayServices-image {
@@ -231,6 +229,8 @@ textarea::placeholder {
 .overlayServices-content {
   font-size: 1.2rem;
   text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .overlay-content-services {
