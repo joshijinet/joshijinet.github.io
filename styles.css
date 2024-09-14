@@ -214,6 +214,23 @@ textarea::placeholder {
   transition: 0.5s;
 }
 
+.overlayServices-image {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+
+.overlayServices-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.overlayServices-content {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 .overlay-content-services {
   position: relative;
   top: 25%;
