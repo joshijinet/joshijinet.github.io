@@ -213,6 +213,8 @@ textarea::placeholder {
   overflow-x: hidden;
   transition: 0.5s;
   color: white;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .overlayServices-image {
