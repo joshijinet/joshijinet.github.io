@@ -31,9 +31,9 @@
   
   <div id="myNavServices" class="overlayServices">
       <a href="javascript:void(0)" class="closebtnServices" onclick="closeNavServices()">&times;</a>
-      <div class="overlay-content-services">
-        <a>TEST!</a>
-      </div>
+      <div class="overlayServices-image" id="overlayServices-image"></div>
+      <div class="overlayServices-title" id="overlayServices-title"></div>
+      <div class="overlayServices-content" id="overlayServices-content"></div>
     </div>
   <header class="hero hero-services">
     <div class="banner">
@@ -43,10 +43,10 @@
       <div class="cards">
         <div class="card">
           <b style="font-size: 1.2rem;">BIRTH CHART ANALYSIS</b>
-          <span style="font-size: 1.2rem; float: right;" onclick="openNavServices()">&#10530;</span>
+          <span style="font-size: 1.2rem; float: right;" onclick="openNavServices(birthChartAnalysisImage, 'Birth Chart Analysis', birthChartAnalysisContent)">&#10530;</span>
           <br /><br />
           I would interpret the planetary positions at the time of your birth to understand your personality traits, strengths and weaknesses.<br />
-          <b style="font-size: 0.8rem; float: right; color: blue; text-decoration: underline; cursor:pointer;" onclick="openNavServices()">more details...</b>
+          <b style="font-size: 0.8rem; float: right; color: blue; text-decoration: underline; cursor:pointer;" onclick="openNavServices(birthChartAnalysisImage, 'Birth Chart Analysis', birthChartAnalysisContent)">more details...</b>
         </div>
         <div class="card">
           <b style="font-size: 1.2rem;">PREDICTION and FORECAST</b><br /><br />
