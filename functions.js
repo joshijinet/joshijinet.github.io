@@ -1,4 +1,4 @@
-var birthChartAnalysisImage="<img src='birthChartAnalysisImage.jpg'>"
+var birthChartAnalysisImage="<img src='birthChartAnalysisImage.png'>"
 var birthChartAnalysisContent=`We analyzes a birth chart (also known as a Kundali or horoscope) to gain insights into an individual's life path, personality, strengths, weaknesses, and potential challenges. Here's what they typically do in a birth chart analysis:<br /><br /><br /> \
   <b><u>Chart Calculation:</u></b><br /> \
   We use individual's birth date, time, and place to calculate the precise positions of the planets and other celestial bodies at the time of their birth. This information is used to create the birth chart, which is a visual representation of the celestial positions.<br /><br /> \
