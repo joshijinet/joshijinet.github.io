@@ -17,14 +17,13 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
-function openNavServices(title) {
+function openNavServices() {
   document.getElementById("myNavServices").style.width = "100%";
 
-  if (title == 'Birth Chart Analysis') {
     document.getElementById("overlayServices-image").innerHTML = birthChartAnalysisImage;
     document.getElementById("overlayServices-title").innerHTML = title;
     document.getElementById("overlayServices-content").innerHTML = birthChartAnalysisContent;
-  }
+  
 }
 
 function closeNavServices() {
